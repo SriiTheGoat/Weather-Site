@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black, white);
+    color: white;
+    height: 100vh;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 10vh auto 0;
+    text-align: center;
+    border-radius: 20px;
+    padding: 40px 35px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#search-box {
+    border: 0;
+    outline: 0;
+    color: #555;
+    background: #ebfffc;
+    padding: 10px 25px;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 70%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.image img {
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+}
+
+.weather-icon {
+    width: 100%;
+    max-width: 170px;
+    margin-top: 30px;
+}
+
+.weather-icon h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.weather-icon h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.col img {
+    width: 60px;
+    margin: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 16px;
+    margin-top: -6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        padding: 30px 25px;
+    }
+
+    .weather-icon h1 {
+        font-size: 40px;
+    }
+
+    .weather-icon h2 {
+        font-size: 20px;
+    }
+
+    .col img {
+        width: 50px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 14px;
+    }
+}
